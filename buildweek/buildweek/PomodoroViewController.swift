@@ -10,13 +10,15 @@ import UIKit
 
 class PomodoroViewController: UIViewController {
 
-    @IBOutlet weak var countdownPicker: UIPickerView!
     
     @IBOutlet weak var timerLabel: UILabel!
     
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var workButton: UIButton!
+    @IBOutlet weak var breakButton: UIButton!
     
     let countdown = Countdown()
+    
+    
     
     
 }

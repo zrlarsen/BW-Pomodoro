@@ -14,11 +14,10 @@ protocol CountdownDelegate: class {
     
 }
 
-enum CountdownState {
+enum TimerState {
     case started
     case finished
     case reset
-    
 }
 
 class Countdown {

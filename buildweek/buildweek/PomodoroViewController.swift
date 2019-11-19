@@ -32,14 +32,31 @@ class PomodoroViewController: UIViewController {
         case.finished:
             timerLabel.text = string(from: 0)
             workButton.isEnabled = true
-        default:
-            <#code#>
+        case .reset:
+            timerLabel.text = string(from: countdown.duration); workButton.isEnabled = false
         }
     }
     func string(from duration: TimeInterval) -> String {
         let date = Date(timeIntervalSinceReferenceDate: duration)
         return dateFormatter.string(from: date)
     }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Pomodoro Finished!", message: "Start your break now.", preferredStyle: .alert)
+        
+        let breakAction = UIAlertAction(title: "Take a Break", style: .default, handler: nil)
+        
+        alert.addAction(breakAction)
+    }
+    @IBAction func startButton(_ sender: Any) {
+        countdown.start()
+        updateViews()
+    }
+    @IBAction func breakButton(_ sender: Any) {
+        countdown.start()
+        updateViews()
+    }
+    
 }
    
 

@@ -46,7 +46,7 @@ class Countdown {
     
     func start() {
         cancelTimer()
-        timer = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: false, block: updateTimer(timer:))
+        timer = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true, block: updateTimer(timer:))
         stopDate = Date().addingTimeInterval(duration)
         state = .started
     }

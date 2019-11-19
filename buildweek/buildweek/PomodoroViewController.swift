@@ -13,27 +13,45 @@ class PomodoroViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
     
-    @IBOutlet weak var workButton: UIButton!
+    @IBOutlet weak var startButton: UIButton!
+    
     @IBOutlet weak var breakButton: UIButton!
     
     let countdown = Countdown()
     
     private var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm:ss."
+        formatter.dateFormat = "HH:mm:ss"
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         return formatter
     }()
     
+    private var countdownLabel: [[String]] = {
+        
+        let minutes: [String] = Array(0...25).map({ String($0) })
+        let seconds: [String] = Array(0...59).map({ String($0) })
+        
+        return [minutes, ["min"], seconds, ["sec"]]
+    }()
+    
+//    func duration(from duration: TimeInterval) {
+//        let minutes =
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
     func updateViews() {
         switch countdown.state {
         case .started:
+            timerLabel.adjustsFontSizeToFitWidth = true
             timerLabel.text = string(from:countdown.timeRemaining)
         case.finished:
             timerLabel.text = string(from: 0)
-            workButton.isEnabled = true
+            startButton.isEnabled = true
         case .reset:
-            timerLabel.text = string(from: countdown.duration); workButton.isEnabled = false
+            timerLabel.text = string(from: countdown.duration); startButton.isEnabled = false
         }
     }
     func string(from duration: TimeInterval) -> String {
@@ -52,11 +70,21 @@ class PomodoroViewController: UIViewController {
         countdown.start()
         updateViews()
     }
+    
     @IBAction func breakButton(_ sender: Any) {
         countdown.start()
         updateViews()
     }
     
 }
-   
+  
+extension PomodoroViewController: PomodoroDelegate {
+    func countdownDidUpdate(timeRemaining: TimeInterval) {
+        updateViews()
+    }
+    func countdownDidFinish() {
+        showAlert()
+        updateViews()
+    }
+}
 

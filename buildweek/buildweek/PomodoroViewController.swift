@@ -18,9 +18,28 @@ class PomodoroViewController: UIViewController {
     
     let countdown = Countdown()
     
+    private var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm:ss."
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
     
-    
-    
+    func updateViews() {
+        switch countdown.state {
+        case .started:
+            timerLabel.text = string(from:countdown.timeRemaining)
+        case.finished:
+            timerLabel.text = string(from: 0)
+            workButton.isEnabled = true
+        default:
+            <#code#>
+        }
+    }
+    func string(from duration: TimeInterval) -> String {
+        let date = Date(timeIntervalSinceReferenceDate: duration)
+        return dateFormatter.string(from: date)
+    }
 }
    
 

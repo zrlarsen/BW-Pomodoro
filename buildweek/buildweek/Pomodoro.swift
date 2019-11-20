@@ -22,7 +22,7 @@ enum TimerState {
 
 class Countdown {
     
-    weak var delegate: PomodoroDelegate?
+    weak var delegate: PomodoroDelegate
     var duration: TimeInterval
     var timer: Timer?
     var stopDate: Date?
@@ -45,7 +45,7 @@ class Countdown {
     }
     
     func start() {
-        cancelTimer()
+//        cancelTimer()
         timer = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true, block: updateTimer(timer:))
         stopDate = Date().addingTimeInterval(duration)
         state = .started

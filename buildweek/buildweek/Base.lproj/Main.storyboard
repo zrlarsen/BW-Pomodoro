@@ -61,7 +61,7 @@
                     <navigationItem key="navigationItem" id="c9h-0M-Tua">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="questionmark.diamond" catalog="system" id="c79-et-oEB">
                             <connections>
-                                <segue destination="LmB-U8-H2E" kind="presentation" id="gvh-qS-4Xd"/>
+                                <segue destination="LmB-U8-H2E" kind="show" id="vKo-MT-QRL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,18 +73,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPD-F4-Tv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928.985507246377" y="-46.205357142857139"/>
+            <point key="canvasLocation" x="852" y="-90"/>
         </scene>
         <!--Pomodoro-->
         <scene sceneID="JWW-Cm-MnD">
             <objects>
                 <viewController id="LmB-U8-H2E" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bfL-F9-mEk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-JZ-CKF">
-                                <rect key="frame" x="10" y="10" width="394" height="788"/>
+                                <rect key="frame" x="10" y="98" width="394" height="754"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Pomodoro?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iU2-No-1Le">
                                         <rect key="frame" x="71.5" y="0.0" width="251" height="36"/>
@@ -99,7 +99,7 @@
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RGa-KV-M1E">
-                                        <rect key="frame" x="10" y="350" width="374" height="438"/>
+                                        <rect key="frame" x="10" y="350" width="374" height="404"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -123,10 +123,11 @@
                         <viewLayoutGuide key="safeArea" id="6Bs-tT-vte"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pomodoro" image="questionmark.diamond.fill" catalog="system" selectedImage="questionmark.diamond.fill" id="bpn-hK-uuD"/>
+                    <navigationItem key="navigationItem" id="a9h-G2-UpK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thc-wn-QJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1929" y="-782"/>
+            <point key="canvasLocation" x="1630" y="-90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tsr-sf-X2a">
@@ -144,7 +145,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PNC-6N-LVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1018.840579710145" y="-46.205357142857139"/>
+            <point key="canvasLocation" x="110" y="-90"/>
         </scene>
     </scenes>
     <resources>

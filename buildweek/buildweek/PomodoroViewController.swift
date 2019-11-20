@@ -10,7 +10,6 @@ import UIKit
 
 class PomodoroViewController: UIViewController {
 
-    
     @IBOutlet weak var timerLabel: UILabel!
     
     @IBOutlet weak var startButton: UIButton!
@@ -18,7 +17,7 @@ class PomodoroViewController: UIViewController {
     @IBOutlet weak var breakButton: UIButton!
     
     let countdown = Countdown()
-    
+   
     private var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm:ss"
@@ -34,11 +33,11 @@ class PomodoroViewController: UIViewController {
         return [minutes, ["min"], seconds, ["sec"]]
     }()
     
-//    func duration(from duration: TimeInterval) {
-//        let minutes =
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+ countdown.delegate = self
         
     }
     
@@ -65,7 +64,11 @@ class PomodoroViewController: UIViewController {
         let breakAction = UIAlertAction(title: "Take a Break", style: .default, handler: nil)
         
         alert.addAction(breakAction)
+        
+        
     }
+    
+    
     @IBAction func startButton(_ sender: Any) {
         countdown.start()
         updateViews()
@@ -81,6 +84,7 @@ class PomodoroViewController: UIViewController {
 extension PomodoroViewController: PomodoroDelegate {
     func countdownDidUpdate(timeRemaining: TimeInterval) {
         updateViews()
+        
     }
     func countdownDidFinish() {
         showAlert()

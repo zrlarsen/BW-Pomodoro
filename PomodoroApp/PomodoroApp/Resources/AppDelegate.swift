@@ -1,15 +1,14 @@
 //
 //  AppDelegate.swift
-//  buildweek
+//  PomodoroApp
 //
-//  Created by Zack Larsen on 11/17/19.
+//  Created by Zack Larsen on 11/20/19.
 //  Copyright © 2019 Zack Larsen. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
-
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

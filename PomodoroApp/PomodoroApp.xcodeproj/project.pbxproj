@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5EC0CAC2381EF55009793B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EC0CAB2381EF55009793B4 /* AppDelegate.swift */; };
-		D5EC0CAE2381EF55009793B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EC0CAD2381EF55009793B4 /* SceneDelegate.swift */; };
-		D5EC0CB32381EF55009793B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5EC0CB12381EF55009793B4 /* Main.storyboard */; };
-		D5EC0CB52381EF58009793B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5EC0CB42381EF58009793B4 /* Assets.xcassets */; };
-		D5EC0CB82381EF58009793B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5EC0CB62381EF58009793B4 /* LaunchScreen.storyboard */; };
-		D5EC0CC22383374D009793B4 /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EC0CC12383374D009793B4 /* Pomodoro.swift */; };
-		D5EC0CC4238337FD009793B4 /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EC0CC3238337FD009793B4 /* PomodoroViewController.swift */; };
+		D5D724BA23860B9A00B97A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D724B923860B9A00B97A5A /* AppDelegate.swift */; };
+		D5D724BC23860B9A00B97A5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D724BB23860B9A00B97A5A /* SceneDelegate.swift */; };
+		D5D724C123860B9A00B97A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D724BF23860B9A00B97A5A /* Main.storyboard */; };
+		D5D724C323860B9B00B97A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D724C223860B9B00B97A5A /* Assets.xcassets */; };
+		D5D724C623860B9B00B97A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D724C423860B9B00B97A5A /* LaunchScreen.storyboard */; };
+		D5D724CF2386110A00B97A5A /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D724CE2386110A00B97A5A /* Pomodoro.swift */; };
+		D5D724D12386112D00B97A5A /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D724D02386112D00B97A5A /* PomodoroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D5EC0CA82381EF55009793B4 /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5EC0CAB2381EF55009793B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5EC0CAD2381EF55009793B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5EC0CB22381EF55009793B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D5EC0CB42381EF58009793B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D5EC0CB72381EF58009793B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D5EC0CB92381EF58009793B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5EC0CC12383374D009793B4 /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
-		D5EC0CC3238337FD009793B4 /* PomodoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
+		D5D724B623860B9A00B97A5A /* PomodoroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D724B923860B9A00B97A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5D724BB23860B9A00B97A5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D5D724C023860B9A00B97A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5D724C223860B9B00B97A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5D724C523860B9B00B97A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5D724C723860B9B00B97A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5D724CE2386110A00B97A5A /* Pomodoro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pomodoro.swift; path = ../../../../../../Desktop/Pomodoro.swift; sourceTree = "<group>"; };
+		D5D724D02386112D00B97A5A /* PomodoroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PomodoroViewController.swift; path = ../../../../../../Desktop/PomodoroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D5EC0CA52381EF55009793B4 /* Frameworks */ = {
+		D5D724B323860B9A00B97A5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,41 +39,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D5EC0C9F2381EF55009793B4 = {
+		D5D724AD23860B9A00B97A5A = {
 			isa = PBXGroup;
 			children = (
-				D5EC0CAA2381EF55009793B4 /* buildweek */,
-				D5EC0CA92381EF55009793B4 /* Products */,
+				D5D724B823860B9A00B97A5A /* PomodoroApp */,
+				D5D724B723860B9A00B97A5A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D5EC0CA92381EF55009793B4 /* Products */ = {
+		D5D724B723860B9A00B97A5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5EC0CA82381EF55009793B4 /* Pomodoro.app */,
+				D5D724B623860B9A00B97A5A /* PomodoroApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D5EC0CAA2381EF55009793B4 /* buildweek */ = {
+		D5D724B823860B9A00B97A5A /* PomodoroApp */ = {
 			isa = PBXGroup;
 			children = (
-				D5EC0CB12381EF55009793B4 /* Main.storyboard */,
-				D5EC0CC12383374D009793B4 /* Pomodoro.swift */,
-				D5EC0CC3238337FD009793B4 /* PomodoroViewController.swift */,
-				D5EC0CB42381EF58009793B4 /* Assets.xcassets */,
-				D5EC0CC023822ED1009793B4 /* Resources */,
-				D5EC0CB92381EF58009793B4 /* Info.plist */,
+				D5D724BF23860B9A00B97A5A /* Main.storyboard */,
+				D5D724D02386112D00B97A5A /* PomodoroViewController.swift */,
+				D5D724CE2386110A00B97A5A /* Pomodoro.swift */,
+				D5D724C223860B9B00B97A5A /* Assets.xcassets */,
+				D5D724CD23860D7500B97A5A /* Resources */,
+				D5D724C723860B9B00B97A5A /* Info.plist */,
 			);
-			path = buildweek;
+			path = PomodoroApp;
 			sourceTree = "<group>";
 		};
-		D5EC0CC023822ED1009793B4 /* Resources */ = {
+		D5D724CD23860D7500B97A5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D5EC0CAB2381EF55009793B4 /* AppDelegate.swift */,
-				D5EC0CAD2381EF55009793B4 /* SceneDelegate.swift */,
-				D5EC0CB62381EF58009793B4 /* LaunchScreen.storyboard */,
+				D5D724B923860B9A00B97A5A /* AppDelegate.swift */,
+				D5D724BB23860B9A00B97A5A /* SceneDelegate.swift */,
+				D5D724C423860B9B00B97A5A /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -81,39 +81,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D5EC0CA72381EF55009793B4 /* buildweek */ = {
+		D5D724B523860B9A00B97A5A /* PomodoroApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5EC0CBC2381EF58009793B4 /* Build configuration list for PBXNativeTarget "buildweek" */;
+			buildConfigurationList = D5D724CA23860B9B00B97A5A /* Build configuration list for PBXNativeTarget "PomodoroApp" */;
 			buildPhases = (
-				D5EC0CA42381EF55009793B4 /* Sources */,
-				D5EC0CA52381EF55009793B4 /* Frameworks */,
-				D5EC0CA62381EF55009793B4 /* Resources */,
+				D5D724B223860B9A00B97A5A /* Sources */,
+				D5D724B323860B9A00B97A5A /* Frameworks */,
+				D5D724B423860B9A00B97A5A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = buildweek;
-			productName = buildweek;
-			productReference = D5EC0CA82381EF55009793B4 /* Pomodoro.app */;
+			name = PomodoroApp;
+			productName = PomodoroApp;
+			productReference = D5D724B623860B9A00B97A5A /* PomodoroApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D5EC0CA02381EF55009793B4 /* Project object */ = {
+		D5D724AE23860B9A00B97A5A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Zack Larsen";
 				TargetAttributes = {
-					D5EC0CA72381EF55009793B4 = {
+					D5D724B523860B9A00B97A5A = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = D5EC0CA32381EF55009793B4 /* Build configuration list for PBXProject "buildweek" */;
+			buildConfigurationList = D5D724B123860B9A00B97A5A /* Build configuration list for PBXProject "PomodoroApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,56 +121,56 @@
 				en,
 				Base,
 			);
-			mainGroup = D5EC0C9F2381EF55009793B4;
-			productRefGroup = D5EC0CA92381EF55009793B4 /* Products */;
+			mainGroup = D5D724AD23860B9A00B97A5A;
+			productRefGroup = D5D724B723860B9A00B97A5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5EC0CA72381EF55009793B4 /* buildweek */,
+				D5D724B523860B9A00B97A5A /* PomodoroApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D5EC0CA62381EF55009793B4 /* Resources */ = {
+		D5D724B423860B9A00B97A5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5EC0CB82381EF58009793B4 /* LaunchScreen.storyboard in Resources */,
-				D5EC0CB52381EF58009793B4 /* Assets.xcassets in Resources */,
-				D5EC0CB32381EF55009793B4 /* Main.storyboard in Resources */,
+				D5D724C623860B9B00B97A5A /* LaunchScreen.storyboard in Resources */,
+				D5D724C323860B9B00B97A5A /* Assets.xcassets in Resources */,
+				D5D724C123860B9A00B97A5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D5EC0CA42381EF55009793B4 /* Sources */ = {
+		D5D724B223860B9A00B97A5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5EC0CAC2381EF55009793B4 /* AppDelegate.swift in Sources */,
-				D5EC0CC4238337FD009793B4 /* PomodoroViewController.swift in Sources */,
-				D5EC0CC22383374D009793B4 /* Pomodoro.swift in Sources */,
-				D5EC0CAE2381EF55009793B4 /* SceneDelegate.swift in Sources */,
+				D5D724BA23860B9A00B97A5A /* AppDelegate.swift in Sources */,
+				D5D724D12386112D00B97A5A /* PomodoroViewController.swift in Sources */,
+				D5D724CF2386110A00B97A5A /* Pomodoro.swift in Sources */,
+				D5D724BC23860B9A00B97A5A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D5EC0CB12381EF55009793B4 /* Main.storyboard */ = {
+		D5D724BF23860B9A00B97A5A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D5EC0CB22381EF55009793B4 /* Base */,
+				D5D724C023860B9A00B97A5A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D5EC0CB62381EF58009793B4 /* LaunchScreen.storyboard */ = {
+		D5D724C423860B9B00B97A5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D5EC0CB72381EF58009793B4 /* Base */,
+				D5D724C523860B9B00B97A5A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D5EC0CBA2381EF58009793B4 /* Debug */ = {
+		D5D724C823860B9B00B97A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		D5EC0CBB2381EF58009793B4 /* Release */ = {
+		D5D724C923860B9B00B97A5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,35 +292,35 @@
 			};
 			name = Release;
 		};
-		D5EC0CBD2381EF58009793B4 /* Debug */ = {
+		D5D724CB23860B9B00B97A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = buildweek/Info.plist;
+				INFOPLIST_FILE = PomodoroApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zlarsen.pomodoro;
-				PRODUCT_NAME = Pomodoro;
+				PRODUCT_BUNDLE_IDENTIFIER = zlarsen.PomodoroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D5EC0CBE2381EF58009793B4 /* Release */ = {
+		D5D724CC23860B9B00B97A5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = buildweek/Info.plist;
+				INFOPLIST_FILE = PomodoroApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zlarsen.pomodoro;
-				PRODUCT_NAME = Pomodoro;
+				PRODUCT_BUNDLE_IDENTIFIER = zlarsen.PomodoroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,25 +329,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D5EC0CA32381EF55009793B4 /* Build configuration list for PBXProject "buildweek" */ = {
+		D5D724B123860B9A00B97A5A /* Build configuration list for PBXProject "PomodoroApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5EC0CBA2381EF58009793B4 /* Debug */,
-				D5EC0CBB2381EF58009793B4 /* Release */,
+				D5D724C823860B9B00B97A5A /* Debug */,
+				D5D724C923860B9B00B97A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5EC0CBC2381EF58009793B4 /* Build configuration list for PBXNativeTarget "buildweek" */ = {
+		D5D724CA23860B9B00B97A5A /* Build configuration list for PBXNativeTarget "PomodoroApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5EC0CBD2381EF58009793B4 /* Debug */,
-				D5EC0CBE2381EF58009793B4 /* Release */,
+				D5D724CB23860B9B00B97A5A /* Debug */,
+				D5D724CC23860B9B00B97A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D5EC0CA02381EF55009793B4 /* Project object */;
+	rootObject = D5D724AE23860B9A00B97A5A /* Project object */;
 }

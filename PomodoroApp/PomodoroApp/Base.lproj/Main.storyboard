@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LMp-9o-oHN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pomodoro View Controller-->
+        <scene sceneID="ADt-tJ-UCY">
+            <objects>
+                <viewController id="LkI-ad-Tah" customClass="PomodoroViewController" customModule="Pomodoro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="79X-N4-C82">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J01-q4-mrm">
+                                <rect key="frame" x="38" y="334" width="338" height="90"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYc-4O-fio">
+                                <rect key="frame" x="134" y="433" width="133" height="36"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Work">
+                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButton:" destination="LkI-ad-Tah" eventType="touchUpInside" id="aSZ-Re-O2t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72Y-pD-Q1s">
+                                <rect key="frame" x="134" y="486" width="133" height="36"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Break">
+                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="breakButton:" destination="LkI-ad-Tah" eventType="touchUpInside" id="zlJ-Mt-pxP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TYc-4O-fio" firstAttribute="leading" secondItem="72Y-pD-Q1s" secondAttribute="leading" id="1Kk-CZ-kUJ"/>
+                            <constraint firstItem="bAY-4a-lQz" firstAttribute="trailing" secondItem="72Y-pD-Q1s" secondAttribute="trailing" constant="147" id="Fws-Of-ho5"/>
+                            <constraint firstItem="J01-q4-mrm" firstAttribute="leading" secondItem="bAY-4a-lQz" secondAttribute="leading" constant="38" id="VSb-Hf-OJJ"/>
+                            <constraint firstItem="J01-q4-mrm" firstAttribute="top" secondItem="bAY-4a-lQz" secondAttribute="top" constant="246" id="aDE-JE-1xW"/>
+                            <constraint firstItem="72Y-pD-Q1s" firstAttribute="top" secondItem="TYc-4O-fio" secondAttribute="bottom" constant="17" id="buF-bd-Bee"/>
+                            <constraint firstItem="72Y-pD-Q1s" firstAttribute="leading" secondItem="bAY-4a-lQz" secondAttribute="leading" constant="134" id="jdW-Av-rvN"/>
+                            <constraint firstItem="bAY-4a-lQz" firstAttribute="trailing" secondItem="J01-q4-mrm" secondAttribute="trailing" constant="38" id="p6i-bM-hGB"/>
+                            <constraint firstItem="TYc-4O-fio" firstAttribute="trailing" secondItem="72Y-pD-Q1s" secondAttribute="trailing" id="qms-v2-Yzk"/>
+                            <constraint firstItem="bAY-4a-lQz" firstAttribute="bottom" secondItem="72Y-pD-Q1s" secondAttribute="bottom" constant="340" id="sS7-NP-7Nn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bAY-4a-lQz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="55w-EV-37d">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="questionmark.diamond" catalog="system" id="Eyg-gP-8yJ">
+                            <connections>
+                                <segue destination="dyR-mn-fAr" kind="show" id="5H8-HE-eu3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="breakButton" destination="72Y-pD-Q1s" id="kMi-uN-cPO"/>
+                        <outlet property="startButton" destination="TYc-4O-fio" id="UNo-MT-vv6"/>
+                        <outlet property="timerLabel" destination="J01-q4-mrm" id="Kz5-d3-hz5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DvQ-74-jnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="-90"/>
+        </scene>
+        <!--Pomodoro-->
+        <scene sceneID="8sG-6t-DFk">
+            <objects>
+                <viewController id="dyR-mn-fAr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gys-YG-mBK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="GHg-IX-mlO">
+                                <rect key="frame" x="10" y="98" width="394" height="754"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Pomodoro?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5c-C3-DhD">
+                                        <rect key="frame" x="71.5" y="0.0" width="251" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maxresdefault" translatesAutoresizingMaskIntoConstraints="NO" id="qxR-sw-cJ6">
+                                        <rect key="frame" x="77" y="129" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Jue-Km-EKz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0YC-dZ-8xc">
+                                        <rect key="frame" x="10" y="350" width="374" height="404"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">The pomodoro technique is a time management method based on 25-minute stretches of focused work broken 5 minute breaks.
+
+Developer and entrepreneur Francesco Cirillo created the pomodoro technique in the late 1980s, when he began to use his tomato-shaped kitchen timer to organize his work schedule. Each working interval is called a pomodoro, the Italian word for tomato (plural: pomodori). 
+
+The pomodoro technique essentially trains people to focus on tasks better by limiting the length of time they attempt to maintain that focus and ensuring restorative breaks from the effort. The method is designed to overcome the tendencies to procrastinate and to multitask -- both of which have been found to impair productivity -- and to help users develop more efficient work habits. Effective time management allows people to get more done in less time, while also fostering a sense of accomplishment and reducing the potential for burnout. </string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0YC-dZ-8xc" firstAttribute="top" secondItem="qxR-sw-cJ6" secondAttribute="bottom" constant="93" id="ITl-ls-w8Y"/>
+                                    <constraint firstItem="0YC-dZ-8xc" firstAttribute="leading" secondItem="GHg-IX-mlO" secondAttribute="leading" constant="10" id="U5S-qt-kkE"/>
+                                    <constraint firstItem="qxR-sw-cJ6" firstAttribute="leading" secondItem="GHg-IX-mlO" secondAttribute="leading" constant="77" id="Ybu-Tk-CZn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GHg-IX-mlO" firstAttribute="leading" secondItem="n0C-WN-Iue" secondAttribute="leading" constant="10" id="Yx6-ER-wNO"/>
+                            <constraint firstItem="n0C-WN-Iue" firstAttribute="bottom" secondItem="GHg-IX-mlO" secondAttribute="bottom" constant="10" id="a1S-CA-icX"/>
+                            <constraint firstItem="n0C-WN-Iue" firstAttribute="trailing" secondItem="GHg-IX-mlO" secondAttribute="trailing" constant="10" id="b8F-Q0-iJD"/>
+                            <constraint firstItem="GHg-IX-mlO" firstAttribute="top" secondItem="n0C-WN-Iue" secondAttribute="top" constant="10" id="v6Q-s6-uEA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n0C-WN-Iue"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pomodoro" image="questionmark.diamond.fill" catalog="system" selectedImage="questionmark.diamond.fill" id="cln-8m-049"/>
+                    <navigationItem key="navigationItem" id="Jb2-AZ-Gck"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zPB-sI-LPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1630" y="-90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="muW-up-QPc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LMp-9o-oHN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SwI-lC-r60">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LkI-ad-Tah" kind="relationship" relationship="rootViewController" id="VMP-hb-ngq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3dg-Wo-pfx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="-90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="maxresdefault" width="1280" height="720"/>
+        <image name="questionmark.diamond" catalog="system" width="64" height="60"/>
+        <image name="questionmark.diamond.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

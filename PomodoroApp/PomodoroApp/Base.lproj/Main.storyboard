@@ -17,13 +17,13 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J01-q4-mrm">
                                 <rect key="frame" x="38" y="334" width="338" height="90"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYc-4O-fio">
                                 <rect key="frame" x="134" y="433" width="133" height="36"/>
-                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Work">
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,7 +34,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72Y-pD-Q1s">
                                 <rect key="frame" x="134" y="486" width="133" height="36"/>
-                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Break">
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,14 +43,21 @@
                                     <action selector="breakButton:" destination="LkI-ad-Tah" eventType="touchUpInside" id="zlJ-Mt-pxP"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maxresdefault" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-h7-Yi1">
+                                <rect key="frame" x="80" y="141" width="240" height="135"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bAY-4a-lQz" firstAttribute="trailing" secondItem="CuA-h7-Yi1" secondAttribute="trailing" constant="94" id="0fP-GS-aVf"/>
                             <constraint firstItem="TYc-4O-fio" firstAttribute="leading" secondItem="72Y-pD-Q1s" secondAttribute="leading" id="1Kk-CZ-kUJ"/>
                             <constraint firstItem="bAY-4a-lQz" firstAttribute="trailing" secondItem="72Y-pD-Q1s" secondAttribute="trailing" constant="147" id="Fws-Of-ho5"/>
                             <constraint firstItem="J01-q4-mrm" firstAttribute="leading" secondItem="bAY-4a-lQz" secondAttribute="leading" constant="38" id="VSb-Hf-OJJ"/>
                             <constraint firstItem="J01-q4-mrm" firstAttribute="top" secondItem="bAY-4a-lQz" secondAttribute="top" constant="246" id="aDE-JE-1xW"/>
                             <constraint firstItem="72Y-pD-Q1s" firstAttribute="top" secondItem="TYc-4O-fio" secondAttribute="bottom" constant="17" id="buF-bd-Bee"/>
+                            <constraint firstItem="CuA-h7-Yi1" firstAttribute="leading" secondItem="bAY-4a-lQz" secondAttribute="leading" constant="80" id="g0R-be-Rcg"/>
+                            <constraint firstItem="J01-q4-mrm" firstAttribute="top" secondItem="CuA-h7-Yi1" secondAttribute="bottom" constant="58" id="ijb-7A-MkF"/>
+                            <constraint firstItem="CuA-h7-Yi1" firstAttribute="top" secondItem="bAY-4a-lQz" secondAttribute="top" constant="53" id="jXE-nA-Qlc"/>
                             <constraint firstItem="72Y-pD-Q1s" firstAttribute="leading" secondItem="bAY-4a-lQz" secondAttribute="leading" constant="134" id="jdW-Av-rvN"/>
                             <constraint firstItem="bAY-4a-lQz" firstAttribute="trailing" secondItem="J01-q4-mrm" secondAttribute="trailing" constant="38" id="p6i-bM-hGB"/>
                             <constraint firstItem="TYc-4O-fio" firstAttribute="trailing" secondItem="72Y-pD-Q1s" secondAttribute="trailing" id="qms-v2-Yzk"/>
@@ -73,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DvQ-74-jnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="-90"/>
+            <point key="canvasLocation" x="850.72463768115949" y="-90.401785714285708"/>
         </scene>
         <!--Pomodoro-->
         <scene sceneID="8sG-6t-DFk">

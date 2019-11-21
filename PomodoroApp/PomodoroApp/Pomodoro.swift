@@ -1,10 +1,11 @@
 //
 //  Pomodoro.swift
-//  buildweek
+//  PomodoroApp
 //
-//  Created by Zack Larsen on 11/18/19.
+//  Created by Zack Larsen on 11/21/19.
 //  Copyright © 2019 Zack Larsen. All rights reserved.
 //
+
 
 import Foundation
 
@@ -79,5 +80,6 @@ class Countdown {
         timer = nil
     }
 }
+
 
 

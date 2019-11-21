@@ -12,8 +12,8 @@
 		D5D724C123860B9A00B97A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D724BF23860B9A00B97A5A /* Main.storyboard */; };
 		D5D724C323860B9B00B97A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D724C223860B9B00B97A5A /* Assets.xcassets */; };
 		D5D724C623860B9B00B97A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D724C423860B9B00B97A5A /* LaunchScreen.storyboard */; };
-		D5D724CF2386110A00B97A5A /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D724CE2386110A00B97A5A /* Pomodoro.swift */; };
-		D5D724D12386112D00B97A5A /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D724D02386112D00B97A5A /* PomodoroViewController.swift */; };
+		D5D724D32386F06D00B97A5A /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D724D22386F06D00B97A5A /* Pomodoro.swift */; };
+		D5D724D52386F0DF00B97A5A /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D724D42386F0DF00B97A5A /* PomodoroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		D5D724C223860B9B00B97A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5D724C523860B9B00B97A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5D724C723860B9B00B97A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5D724CE2386110A00B97A5A /* Pomodoro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pomodoro.swift; path = ../../../../../../Desktop/Pomodoro.swift; sourceTree = "<group>"; };
-		D5D724D02386112D00B97A5A /* PomodoroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PomodoroViewController.swift; path = ../../../../../../Desktop/PomodoroViewController.swift; sourceTree = "<group>"; };
+		D5D724D22386F06D00B97A5A /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
+		D5D724D42386F0DF00B97A5A /* PomodoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				D5D724BF23860B9A00B97A5A /* Main.storyboard */,
-				D5D724D02386112D00B97A5A /* PomodoroViewController.swift */,
-				D5D724CE2386110A00B97A5A /* Pomodoro.swift */,
+				D5D724D22386F06D00B97A5A /* Pomodoro.swift */,
+				D5D724D42386F0DF00B97A5A /* PomodoroViewController.swift */,
 				D5D724C223860B9B00B97A5A /* Assets.xcassets */,
 				D5D724CD23860D7500B97A5A /* Resources */,
 				D5D724C723860B9B00B97A5A /* Info.plist */,
@@ -150,9 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5D724BA23860B9A00B97A5A /* AppDelegate.swift in Sources */,
-				D5D724D12386112D00B97A5A /* PomodoroViewController.swift in Sources */,
-				D5D724CF2386110A00B97A5A /* Pomodoro.swift in Sources */,
+				D5D724D52386F0DF00B97A5A /* PomodoroViewController.swift in Sources */,
 				D5D724BC23860B9A00B97A5A /* SceneDelegate.swift in Sources */,
+				D5D724D32386F06D00B97A5A /* Pomodoro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

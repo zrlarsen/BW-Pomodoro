@@ -1,10 +1,9 @@
 //
 //  PomodoroViewController.swift
-//  buildweek
+//  PomodoroApp
 //
-//  Created by Zack Larsen on 11/18/19.
+//  Created by Zack Larsen on 11/21/19.
 //  Copyright © 2019 Zack Larsen. All rights reserved.
-//
 
 import UIKit
 
@@ -26,19 +25,10 @@ class PomodoroViewController: UIViewController {
         return formatter
     }()
     
-    private var countdownLabel: [[String]] = {
-        
-        let minutes: [String] = Array(0...25).map({ String($0) })
-        let seconds: [String] = Array(0...59).map({ String($0) })
-        
-        return [minutes, ["min"], seconds, ["sec"]]
-    }()
-    
-//    func duration(from duration: TimeInterval) {
-//        let minutes =
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        countdown.delegate = self
         
     }
     
@@ -50,8 +40,10 @@ class PomodoroViewController: UIViewController {
         case.finished:
             timerLabel.text = string(from: 0)
             startButton.isEnabled = true
+            breakButton.isEnabled = true
         case .reset:
             timerLabel.text = string(from: countdown.duration); startButton.isEnabled = false
+                breakButton.isEnabled = false
         }
     }
     func string(from duration: TimeInterval) -> String {
@@ -65,26 +57,51 @@ class PomodoroViewController: UIViewController {
         let breakAction = UIAlertAction(title: "Take a Break", style: .default, handler: nil)
         
         alert.addAction(breakAction)
+        present(alert, animated: true)
     }
+    
+    func showBreakAlert() {
+        let breakAlert = UIAlertController(title: "Break Finished!", message: "Back to work.", preferredStyle: .alert)
+        
+        let breakAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        breakAlert.addAction(breakAction)
+        
+        present(breakAlert, animated: true)
+    }
+    
+    
     @IBAction func startButton(_ sender: Any) {
+        countdown.duration = 5
+        countdown.reset()
         countdown.start()
         updateViews()
+        startButton.isEnabled.toggle()
     }
     
     @IBAction func breakButton(_ sender: Any) {
+        countdown.duration = 5
+        countdown.reset()
         countdown.start()
         updateViews()
+        breakButton.isEnabled.toggle()
     }
     
 }
   
 extension PomodoroViewController: PomodoroDelegate {
     func countdownDidUpdate(timeRemaining: TimeInterval) {
-        updateViews()
+       updateViews()
     }
     func countdownDidFinish() {
-        showAlert()
+        if startButton.isEnabled == false {
+            showAlert()
+            updateViews()
+        } else {
+            showBreakAlert()
+        }
         updateViews()
     }
 }
+
 
